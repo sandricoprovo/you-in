@@ -1,0 +1,9 @@
+{
+    "extends": ["next/core-web-vitals", "sandricoprovo/typescript"],
+    "plugins": ["@emotion"],
+    "ignorePatterns": ["./next.config.js"],
+    "rules": {
+        "@typescript-eslint/indent": "off",
+        "react/no-unknown-property": ["error", { "ignore": ["css"] }]
+    }
+}
