@@ -1,15 +1,16 @@
 import { Global, css } from '@emotion/react';
 
 import { Reset } from './reset';
-import { FontFace } from './fontFace';
 
 const globalStyles = css`
-    ${FontFace}
     ${Reset}
 
     :root {
+        /* === COLOR === */
+        --black: #1f1f1f;
+
         /* === TYPOGRAPHY === */
-        --font-primary: 'Inter';
+        --font-primary: var(--inter);
 
         /* Scale */
         --font-scale: 1.414;
@@ -102,6 +103,10 @@ const globalStyles = css`
         /* === ELEMENTS === */
         /* Animations */
         --animation-timing: 200ms;
+    }
+
+    body[data-theme='default'] {
+        --clr-text: var(--black);
     }
 `;
 
