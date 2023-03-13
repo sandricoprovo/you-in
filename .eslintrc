@@ -3,7 +3,8 @@
     "plugins": ["@emotion"],
     "ignorePatterns": ["./next.config.js"],
     "rules": {
+        "react/no-unknown-property": ["error", { "ignore": ["css"] }],
         "@typescript-eslint/indent": "off",
-        "react/no-unknown-property": ["error", { "ignore": ["css"] }]
+        "@typescript-eslint/comma-dangle": "off"
     }
 }

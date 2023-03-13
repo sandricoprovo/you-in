@@ -79,11 +79,32 @@ const globalStyles = css`
             15.1px 23.7px 37.9px -0.8px hsl(var(--shadow-color) / 0.21),
             19.8px 31.2px 49.9px -0.9px hsl(var(--shadow-color) / 0.23),
             25.9px 40.8px 65.2px -1px hsl(var(--shadow-color) / 0.25);
+
+        /* === SPACING === */
+        /* Padding */
+        --padding-base: 8px;
+        --pad-2: calc(var(--padding-base) * 0.25);
+        --pad-4: calc(var(--padding-base) * 0.5);
+        --pad-6: calc(var(--padding-base) * 0.75);
+        --pad-8: var(--padding-base);
+        --pad-16: calc(var(--padding-base) * 2);
+        --pad-24: calc(var(--padding-base) * 3);
+        --pad-32: calc(var(--padding-base) * 4);
+        --pad-40: calc(var(--padding-base) * 5);
+        --pad-48: calc(var(--padding-base) * 6);
+        --pad-56: calc(var(--padding-base) * 7);
+        --pad-64: calc(var(--padding-base) * 8);
+
+        /* === ELEMENTS === */
+        /* Border Radius */
+        --br-btn: 5px;
+
+        /* === ELEMENTS === */
+        /* Animations */
+        --animation-timing: 200ms;
     }
 `;
 
-function GlobalStyles() {
+export function GlobalStyles() {
     return <Global styles={globalStyles} />;
 }
-
-export { GlobalStyles };

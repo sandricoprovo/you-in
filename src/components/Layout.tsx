@@ -1,6 +1,8 @@
 import { css } from '@emotion/react';
 
+import { Header } from '@/components/Header';
 import { Children } from '@/types/children';
+import { GlobalStyles } from '@/styles/GlobalStyles';
 
 const layoutCss = css``;
 
@@ -10,10 +12,13 @@ type LayoutProps = {
 
 export function Layout({ children }: LayoutProps) {
     return (
-        <div css={layoutCss}>
-            <header />
-            <main>{children}</main>
-            <footer />
-        </div>
+        <>
+            <GlobalStyles />
+            <div css={layoutCss}>
+                <Header />
+                {children}
+                <footer />
+            </div>
+        </>
     );
 }
