@@ -7,9 +7,71 @@ const globalStyles = css`
 
     :root {
         /* === COLOR === */
-        --black: #1f1f1f;
+
+        /* Bluemine */
+        --blumine-50: #f2f9fd;
+        --blumine-100: #e5f1f9;
+        --blumine-200: #c5e2f2;
+        --blumine-300: #91cae8;
+        --blumine-400: #57aed9;
+        --blumine-500: #3195c6;
+        --blumine-600: #2277a7;
+        --blumine-700: #1c5e86; // main
+        --blumine-800: #1b5171;
+        --blumine-900: #1c445e;
+
+        /* Gossamer */
+        --gossamer-50: #effef7;
+        --gossamer-100: #dafeed;
+        --gossamer-200: #b7fbdb;
+        --gossamer-300: #7ff6c0;
+        --gossamer-400: #40e89b;
+        --gossamer-500: #17d07d;
+        --gossamer-600: #0cac64; // main
+        --gossamer-700: #0d8851;
+        --gossamer-800: #106b43;
+        --gossamer-900: #105739;
+
+        /* Buttercup */
+        --buttercup-50: #fffceb;
+        --buttercup-100: #fdf5c8;
+        --buttercup-200: #fce98b;
+        --buttercup-300: #fad84f;
+        --buttercup-400: #f9c526;
+        --buttercup-500: #f3a712; // main
+        --buttercup-600: #d77e08;
+        --buttercup-700: #b2590b;
+        --buttercup-800: #91440f;
+        --buttercup-900: #773910;
+
+        /* Alizarin Crimson */
+        --alizarin-crimson-50: #fef2f3;
+        --alizarin-crimson-100: #fee2e4;
+        --alizarin-crimson-200: #fecace;
+        --alizarin-crimson-300: #fba6ad;
+        --alizarin-crimson-400: #f7727d;
+        --alizarin-crimson-500: #ee4552;
+        --alizarin-crimson-600: #db2b39; // main
+        --alizarin-crimson-700: #b81d29;
+        --alizarin-crimson-800: #981c26;
+        --alizarin-crimson-900: #7e1e26;
+
+        /* Grey Scale */
+        --grey-25: #ffffff; // white
+        --grey-50: #f7f7f7;
+        --grey-100: #e3e3e3;
+        --grey-200: #c8c8c8;
+        --grey-300: #a4a4a4;
+        --grey-400: #818181;
+        --grey-500: #666666;
+        --grey-600: #515151;
+        --grey-700: #434343;
+        --grey-800: #383838;
+        --grey-900: #1f1f1f; // Black
 
         /* === TYPOGRAPHY === */
+
+        /* Fonts */
         --font-primary: var(--inter);
 
         /* Scale */
@@ -82,6 +144,7 @@ const globalStyles = css`
             25.9px 40.8px 65.2px -1px hsl(var(--shadow-color) / 0.25);
 
         /* === SPACING === */
+
         /* Padding */
         --padding-base: 8px;
         --pad-2: calc(var(--padding-base) * 0.25);
@@ -97,16 +160,21 @@ const globalStyles = css`
         --pad-64: calc(var(--padding-base) * 8);
 
         /* === ELEMENTS === */
+
         /* Border Radius */
         --br-btn: 5px;
 
         /* === ELEMENTS === */
+
         /* Animations */
         --animation-timing: 200ms;
+        --ease-fade-in: cubic-bezier(0.77, 0, 0.18, 1);
     }
 
     body[data-theme='default'] {
-        --clr-text: var(--black);
+        /* Text */
+        --clr-text: var(--grey-900);
+        --clr-text-bg: var(--blumine-300);
     }
 `;
 
